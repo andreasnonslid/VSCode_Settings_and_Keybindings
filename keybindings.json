@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "command": "runCommands",
+        "key": "ctrl+oem_4 ctrl+a",
+        "args": {
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility",
+                "workbench.action.toggleStatusbarVisibility",
+                "workbench.action.toggleMenuBar",
+                // "toggle.window.commandCenter",
+            ]
+        },
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        // Cmake launch current target
+        "key": "ctrl+oem_4  r",
+        "command": "cmake.launchTarget"
+    },
+    {
+        // Cmake build current target
+        "key": "ctrl+oem_4  b",
+        "command": "cmake.build"
+    },
+    {
+        "key": "ctrl+oem_4  j",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        // Open a new terminal with a specific key combination.
+        "key": "ctrl+oem_4  t",
+        "command": "workbench.action.terminal.newInActiveWorkspace"
+    },
+    {
+        // Close current terminal with a specific key combination.
+        "key": "ctrl+oem_4  w",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        // Comment or uncomment the current line or selected text.
+        "key": "ctrl+oem_4  k",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        // Go to terminal
+        "key": "ctrl+oem_4 space",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        // Go back to editor from terminal
+        "key": "ctrl+oem_4 space",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // Same as above for problems and output
+    {
+        "key": "ctrl+oem_4 p",
+        "command": "workbench.actions.view.problems",
+        "when": "!problemsFocus"
+    },
+    {
+        "key": "ctrl+oem_4 p",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "problemsFocus"
+    },
+    {
+        "key": "ctrl+oem_4 o",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "!outputFocus"
+    },
+    {
+        "key": "ctrl+oem_4 o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "outputFocus"
+    },
+    {
+        // Go to the next error or warning.
+        "key": "f8",
+        "command": "editor.action.marker.next"
+    },
+    {
+        // Go to the previous error or warning.
+        "key": "shift+f8",
+        "command": "editor.action.marker.prev"
+    },
+    {
+        // Maximize output+terminal view
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.toggleMaximizedPanel"
+    }
+]
